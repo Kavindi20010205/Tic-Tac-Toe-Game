@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #C89850;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.controller.loginController">
+   <children>
+      <Pane fx:id="login_panel" prefHeight="403.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="678.0" prefWidth="580.0" style="-fx-background-color: #82293F;">
+               <children>
+                  <Pane layoutX="211.0" layoutY="499.0" prefHeight="101.0" prefWidth="155.0" style="-fx-background-color: #C89850;">
+                     <children>
+                        <Button fx:id="start_btn" layoutX="9.0" layoutY="7.0" mnemonicParsing="false" onAction="#start_btn_onAction" prefHeight="88.0" prefWidth="137.0" style="-fx-background-color: f8ea4e;" text="Start" textFill="#c9315c">
+                           <font>
+                              <Font name="Chilanka Regular" size="35.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <HBox layoutX="10.0" layoutY="50.0" prefHeight="100.0" prefWidth="580.0">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/tic_tac_toe.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" prefHeight="85.0" prefWidth="458.0" text="Tic Tac Toe Game" textAlignment="CENTER" textFill="#ffbf5e">
+                     <font>
+                        <Font name="Chilanka Regular" size="53.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
